@@ -123,6 +123,13 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   background-color: transparent;
+  transform: translateX(0%);
+}
+
+.header-link:hover,
+:focus  {
+  fill: var(--text-hover-color);
+  background-color: transparent;
 }
 
 .header-link.current {
@@ -131,10 +138,16 @@ img {
   background-color: none;
 }
 
-.header-link:hover,
-:focus  {
-  fill: var(--text-hover-color);
-  background-color: transparent;
+.header-link.current::after {
+  content: '';
+  background-color: var(--text-hover-color);
+  position: absolute;
+  width: 78px;
+  height: 4px;
+  left: 546px;
+  top: 76px;
+  border-radius: 2px;
+  transform: translateX(100%);
 }
 
 .cont-pic-list:hover .contacts-icon,
