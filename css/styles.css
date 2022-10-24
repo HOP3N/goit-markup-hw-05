@@ -123,7 +123,7 @@ img {
   letter-spacing: 0.02em;
   color: var(--main-text-color);
   background-color: transparent;
-  transform: translateX(0%);
+  
 }
 
 .header-link:hover,
@@ -136,17 +136,18 @@ img {
   color: var(--text-hover-color);
   list-style: none;
   background-color: none;
+  transform: translateX(0%);
 }
 
-.header-link.current::after {
+.header-link::after {
   content: '';
   background-color: var(--text-hover-color);
-  position: absolute;
   width: 78px;
   height: 4px;
   left: 546px;
   top: 76px;
   border-radius: 2px;
+  position: absolute;
   transform: translateX(100%);
 }
 
