@@ -54,9 +54,12 @@
                     </a>
                     <div class="">
                         <a class="contact-number" href="tel:+380961111111">+38 096 111 1111</a>
+                        
                     </div>
                 </li>
             </ul>
+            <button class="header-btn" data-modal-open 
+                        type="button">Замовити послугу</button>
         </div>
     </header>
     <main>
@@ -405,13 +408,14 @@
             </div>
         </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-hidden" data-modal>
         <div class="modal">
-            <button type="button">
+            <button type="button" class="modal-close" data-modal-close>
                 <img src="./images/close-black-18dp (2) 1.svg" alt="close">
             </button>
         </div>
     </div>
+    <script src="./js/modal.js"></script>
 </body>
 
 </html>
