@@ -831,6 +831,8 @@ img {
   position: fixed;
   top: 0;
   background-color: rgba(0, 0, 0, 0.2);
+  transition: opacity 300ms linear, 
+  visibility 300ms linear;
 }
 
 .modal {
@@ -844,7 +846,12 @@ img {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%) scaleZ(1);
+  transition: transform 300ms linear;
+}
+
+.backdrop.is-hidden .modal {
+  transform: translate(-50%, -50%) scaleZ(0);
 }
 
 .modal-close {
