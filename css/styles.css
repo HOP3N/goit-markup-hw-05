@@ -838,6 +838,9 @@ img {
   background-color: rgba(0, 0, 0, 0.2);
   transition: opacity 300ms linear, 
   visibility 300ms linear;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
 
 .modal {
@@ -853,6 +856,19 @@ img {
   left: 50%;
   transform: translate(-50%, -50%) scaleZ(1);
   transition: transform 300ms linear;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.modal:hover .modal-close {
+  fill: var(--text-hover-color);
+  background-color: transparent;
+}
+
+.modal-close:hover {
+  fill: var(--text-hover-color);
+  background-color: transparent;
 }
 
 .backdrop.modal {
@@ -862,13 +878,19 @@ img {
 .modal-close {
   width: 30px;
   height: 30px;
-  background: var(--sub-text-color);
+  background: none;
   border: 1px solid rgba(0, 0, 0, 0.1);
   border-radius: 50%;
   position: absolute;
   top: 8px;
   right: 8px;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
 }
+
+
+
 
 .is-hidden {
   opacity: 0;
